@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Success</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+    <h1>Login Success</h1>
+    <% if (newUsername) { %>
+        <p>You have successfully logged in with <%= newUsername ? 'new ' : '' %>username: <%= newUsername || username %></p>
+    <% } else { %>
+        <p>You have successfully logged in with username: <%= username %></p>
+    <% } %>
+    <div class="actions">
+        <a href="/update-info" class="btn">Update Info</a>
+    </div>
+</body>
+</html>
